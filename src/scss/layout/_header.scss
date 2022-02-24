@@ -1,0 +1,12 @@
+.header {
+  display: flex;
+
+  .fb__logo {
+    width: 5rem;
+    height: 5rem;
+    animation: logo-rotate infinite linear 10000ms;
+    fill: #3b5998;
+  }
+  .fb__search {
+  }
+}

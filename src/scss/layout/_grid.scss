@@ -1,0 +1,22 @@
+.home {
+  display: grid;
+  grid-template-rows: 5rem 1fr;
+  grid-template-columns: 34rem 1fr;
+
+  &__content {
+    background-color: #f2f5c8;
+    display: grid;
+    grid-template-rows: 38rem 1fr;
+    grid-template-columns: 6fr 5fr;
+  }
+}
+
+.profile {
+  grid-column: 1 / -1;
+}
+
+.header {
+  grid-column: 1 / span 2;
+}
+.sidebar {
+}
