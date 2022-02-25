@@ -1,3 +1,86 @@
 .sidebar {
   background-color: var(--color-bg);
+  display: flex;
+  flex-direction: column;
+  align-items: space-between;
+
+  &__list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-inline: 1.5rem;
+  }
+
+  &__item {
+    padding: 0.5rem 0;
+    &:hover {
+      background-color: var(--color-bg-hover);
+      border-radius: 1rem;
+    }
+  }
+
+  &__link {
+    &:link,
+    &:active,
+    &:visited {
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+      color: var(--color-text);
+      font-size: 1.5rem;
+    }
+  }
+
+  &__icon {
+    height: 3.6rem;
+    width: 3.6rem;
+    margin-right: 1rem;
+
+    &--round {
+      height: 3rem;
+      width: 3rem;
+      border-radius: 0.5rem;
+    }
+
+    &--img {
+      height: 3rem;
+      border-radius: 50%;
+    }
+  }
+
+  &__divide {
+    display: flex;
+    justify-content: center;
+    .sidebar__line {
+      width: 90%;
+      height: 1rem;
+      border-top: 1px solid var(--color-bg-hover);
+    }
+  }
+
+  &__more {
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    color: var(--color-text);
+    fill: currentColor;
+    padding: 0.75rem 0;
+
+    &--icon {
+      height: 2.5rem;
+      width: 2.5rem;
+      padding: 0.5rem;
+      border-radius: 50%;
+      background-color: var(--color-bg-light);
+      margin: 0 1rem 0 0.3rem;
+    }
+  }
+
+  &__shortcuts {
+    font-size: 1.6rem;
+    color: var(--color-text);
+    padding: 0 1.6rem;
+    margin-block-end: 0;
+  }
 }
