@@ -1,4 +1,4 @@
-export const Info = () => {
+export const Contacts = () => {
   return (
     <div className="info">
       <h2>Info</h2>

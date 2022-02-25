@@ -10,9 +10,11 @@
 
 //^ Components
 @use "./components/buttons";
+@use "./components/create";
 @use "./components/info";
 @use "./components/post";
 @use "./components/profile";
+@use "./components/stories";
 
 //& Layout
 @use "./layout/grid";

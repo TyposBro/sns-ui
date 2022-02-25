@@ -1,12 +1,138 @@
 .header {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  fill: var(--color-icon);
+  background-color: var(--color-header-bg);
+  height: 6rem;
+}
+.fb {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-  .fb__logo {
-    width: 5rem;
-    height: 5rem;
+  &__logo {
+    width: 7rem;
+    height: 7rem;
     animation: logo-rotate infinite linear 10000ms;
-    fill: #3b5998;
+    fill: var(--color-fb);
+    cursor: pointer;
   }
-  .fb__search {
+  &__search-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24rem;
+    height: 4rem;
+    border-radius: 5rem;
+    border: 0.1rem solid var(--color-bg);
+    background-color: var(--color-bg-light);
+    margin-left: -1rem;
+    cursor: pointer;
+  }
+  &__search {
+    width: 1.6rem;
+    height: 1.6rem;
+    margin-right: 1rem;
+  }
+  &__input {
+    outline: none;
+    border: none;
+    height: 90%;
+    width: 80%;
+    background-color: transparent;
+    &::placeholder {
+      color: var(--color-icon);
+      font-size: 1.4rem;
+      font-weight: 500;
+    }
+  }
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  margin: 0 3rem;
+  &__icon {
+    padding: 1.2rem 3rem;
+
+    &:hover {
+      background-color: var(--color-bg-light);
+      border-radius: 1rem;
+    }
+  }
+
+  &__active {
+    border-bottom: 0.3rem solid var(--color-fb);
+    & > * {
+      fill: var(--color-fb);
+    }
+  }
+}
+
+.manage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 3.5rem;
+    padding: 0 0.5rem;
+
+    &:hover {
+      border-radius: 2rem;
+      background-color: var(--color-bg-light);
+    }
+  }
+  &__img {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  &__text {
+    font-size: 1.4rem;
+    color: var(--color-text);
+    padding: 0 0.7rem;
+    margin-right: 1rem;
+
+    cursor: pointer;
+  }
+
+  &__icon-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: 0.1rem solid var(--color-bg);
+    height: 4rem;
+    width: 4rem;
+    background-color: var(--color-bg-light);
+    margin: 0 0.4rem;
+    cursor: pointer;
+
+    &:hover {
+      background-color: var(--color-bg-hover);
+    }
+
+    &:last-child {
+      margin-right: 2rem;
+    }
+
+    & > * {
+      width: 2rem;
+      height: 2rem;
+    }
   }
 }
