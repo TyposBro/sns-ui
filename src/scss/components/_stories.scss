@@ -1,0 +1,13 @@
+.stories {
+  &__list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding-inline: 0;
+  }
+  &__item {
+    margin: 1rem 0.5rem;
+
+    overflow: hidden;
+  }
+}

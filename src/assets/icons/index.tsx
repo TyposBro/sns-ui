@@ -10,5 +10,6 @@ import { ReactComponent as Gaming } from "./gaming.svg";
 import { ReactComponent as Menu } from "./menu.svg";
 import { ReactComponent as Messenger } from "./messenger.svg";
 import { ReactComponent as Notification } from "./notifications.svg";
+import { ReactComponent as Plus } from "./plus.svg";
 
-export { Account, ArrowDown, ArrowRight, Logo, Search, Home, Watch, Groups, Gaming, Menu, Messenger, Notification };
+export { Account, ArrowDown, ArrowRight, Logo, Plus, Search, Home, Watch, Groups, Gaming, Menu, Messenger, Notification };

@@ -12,7 +12,7 @@ export const Home = () => {
       <Sidebar></Sidebar>
       <main className="home__content">
         <Stories />
-        <Create />
+        {/* <Create />
         <div className="Home__feed">
           <Post></Post>
           <Post></Post>
@@ -20,7 +20,7 @@ export const Home = () => {
           <Post></Post>
           <Post></Post>
           <Post></Post>
-        </div>
+        </div> */}
       </main>
       <Contacts></Contacts>
     </div>
