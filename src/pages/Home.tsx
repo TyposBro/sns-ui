@@ -21,6 +21,17 @@ export const Home = () => {
           <Post></Post>
           <Post></Post>
         </div> */}
+        <Post></Post>
+        <Post></Post>
+        <Post></Post>
+        <Post></Post>
+        <Post></Post>
+        <Post></Post>
+        <Post></Post>
+
+        <Post></Post>
+        <Post></Post>
+        <Post></Post>
       </main>
       <Contacts></Contacts>
     </div>
